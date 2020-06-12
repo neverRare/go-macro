@@ -107,7 +107,7 @@ macro_rules! go {
             })
         }
     };
-    (for $var:ident := $($start:stmt)?; $condition:expr; $inc_var:ident++ {
+    (for $var:ident := $start:expr; $condition:expr; $inc_var:ident++ {
         $($body:stmt)*
     }) => {
         go! {
@@ -116,7 +116,7 @@ macro_rules! go {
             }
         }
     };
-    (for $var:ident := $($start:stmt)?; $condition:expr; $inc_var:ident-- {
+    (for $var:ident := $start:expr; $condition:expr; $inc_var:ident-- {
         $($body:stmt)*
     }) => {
         go! {
