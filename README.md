@@ -51,3 +51,5 @@ go! {
     }
 }
 ```
+
+As much as how unserious this is, this is my personal project for learning `macro_rules` in Rust. I know proc macro can do better, but this is more fun. Of course, I won't publish this to crates.io :) this project can cause disgrace.
